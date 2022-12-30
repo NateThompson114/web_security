@@ -19,23 +19,21 @@ public class Login : PageModel
     {
         if(!ModelState.IsValid) return Page();
 
-        if (Credential.UserName == "admin" && Credential.Password == "password")
+        if (Credential.UserName != "admin" || Credential.Password != "password") return Page();
+        
+        var claims = new List<Claim>
         {
-            var claims = new List<Claim>
-            {
-                new(ClaimTypes.Name, "admin"),
-                new(ClaimTypes.Email, "admin@mywebsite.com")
-            };
+            new(ClaimTypes.NameIdentifier, Guid.NewGuid().ToString()),
+            new(ClaimTypes.Name, "admin"),
+            new(ClaimTypes.Email, "admin@mywebsite.com")
+        };
 
-            var identity = new ClaimsIdentity(claims, "MyCookie");
-            var claimsPrincipal = new ClaimsPrincipal(identity);
+        var identity = new ClaimsIdentity(claims, "MyCookie");
+        var claimsPrincipal = new ClaimsPrincipal(identity);
 
-            await HttpContext.SignInAsync("MyCookie",claimsPrincipal);
+        await HttpContext.SignInAsync("MyCookie",claimsPrincipal);
 
-            return RedirectToPage("/Index");
-        }
-
-        return Page();
+        return RedirectToPage("/Index");
     }
 }
 
