@@ -1,0 +1,102 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net7.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\nthompson2\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\nthompson2\\RiderProjects\\WebApplication1\\WebApp\\WebApp.csproj",
+      "projectName": "WebApp",
+      "projectPath": "C:\\Users\\nthompson2\\RiderProjects\\WebApplication1\\WebApp\\WebApp.csproj",
+      "packagesPath": "C:\\Users\\nthompson2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nthompson2\\RiderProjects\\WebApplication1\\WebApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\nthompson2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nexus.avidxchange.com/repository/nuget-all/": {},
+        "http://nexus.avidxchange.com/repository/nuget-enclave/": {},
+        "http://nexus.avidxchange.com/repository/nuget-shared-services/": {},
+        "http://nexus.avidxchange.com/repository/nuget-shared/": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/avidxchange/packaging/common-libraries/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nexus.avidxchange.com/repository/nuget-shared/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nexus.avidxchange.com/repository/nuget-enclave/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nexus.avidxchange.com/repository/nuget-shared-services/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nexus.avidxchange.com/repository/nuget-all/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
