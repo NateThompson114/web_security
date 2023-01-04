@@ -1,7 +1,13 @@
+using System.Xml.Linq;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using WebApplication1.Fun;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddControllers().AddXmlSerializerFormatters();
 
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication("MyCookie")
@@ -28,6 +34,7 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapControllers();
 app.MapRazorPages();
 
 app.Run();
